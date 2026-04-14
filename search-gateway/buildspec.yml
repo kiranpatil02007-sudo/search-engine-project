@@ -3,10 +3,9 @@ version: 0.2
 phases:
   build:
     commands:
-      - echo "Building search-gateway"
-      - cd search-gateway
-      - zip -r function.zip .
+      - echo "Building searchFunction"
+      - zip -r function.zip searchFunction/
 
 artifacts:
   files:
-    - search-gateway/function.zip
+    - function.zip
