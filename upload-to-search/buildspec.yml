@@ -10,3 +10,4 @@ phases:
 artifacts:
   files:
     - upload-to-search/function.zip
+    - upload-to-search/upload-to-search.yaml
