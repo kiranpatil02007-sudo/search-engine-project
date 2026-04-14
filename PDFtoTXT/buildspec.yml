@@ -1,14 +1,12 @@
 version: 0.2
+
 phases:
-  install:
-    runtime-versions:
-      python: 3.10
   build:
     commands:
-      - aws cloudformation package --template-file pdftotxt.yaml --s3-bucket artifacts-bucket-gl --output-template-file lambdaoutput.yaml
+      - echo "Building PDFtoTXT"
+      - cd PDFtoTXT
+      - zip -r function.zip .
 
 artifacts:
-  type: zip
   files:
-    - pdftotxt.yaml
-    - lambdaoutput.yaml
+    - PDFtoTXT/function.zip
