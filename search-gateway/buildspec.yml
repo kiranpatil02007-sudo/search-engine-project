@@ -4,9 +4,9 @@ phases:
   build:
     commands:
       - echo "Building search-gateway"
-      - cd "Search Gateway"
+      - cd search-gateway
       - zip -r function.zip .
 
 artifacts:
   files:
-    - "Search Gateway/function.zip"
+    - search-gateway/function.zip
